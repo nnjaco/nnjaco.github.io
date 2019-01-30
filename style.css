@@ -35,7 +35,7 @@ img:hover{
     transform: scale(1.2);
 }
 
-button{
+.button{
     height: 50px;
     width: 400px;
     border-radius: 25px;
