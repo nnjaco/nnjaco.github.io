@@ -1,0 +1,45 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-image: url(bg_apples.jpg);
+    background-size: cover;
+    margin: 0px;
+}
+
+img{
+    height: 200px;
+    width: 200px;
+    transition: 1s;
+    margin-bottom: 50px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0px;
+    padding: 50px;
+}
+
+h1{
+    font-size: 100px;
+    color: #005DD8;
+    font-family: 'Bree Serif', serif;
+    text-shadow: 2px 2px blue;
+    margin: 0px;
+    margin-bottom: 50px;
+}
+
+img:hover{
+    transform: scale(1.2);
+}
+
+button{
+    height: 50px;
+    width: 400px;
+    border-radius: 25px;
+    background-color: rgb(247, 129, 19);
+    color: red;
+    font-size: xx-large;
+}
