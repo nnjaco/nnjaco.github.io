@@ -111,15 +111,18 @@ body  {
 }
 
 img.grid_image{
-    border: 10px darkblue solid;
+    /*border: 10px darkblue solid;*/
     height: 250px;
     width: 250px;
     padding: 5%;
     margin: 5%;
+    justify-self: center;
+    align-self: center;
 }
 
 .container{
     display: grid;
+    padding: 20px;
     grid-gap: 20px;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-template-rows: repeat(auto-fill, 1fr);
