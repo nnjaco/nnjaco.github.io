@@ -20,6 +20,8 @@ body  {
     color: rgb(255, 255, 239);
 }
 
+
+
 #contact{
     display: flex;
     justify-content: flex-end;
@@ -99,4 +101,10 @@ img.cover{
     height: 50px;
     text-align: center;
     background-color: blueviolet;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
