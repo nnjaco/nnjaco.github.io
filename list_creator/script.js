@@ -2,12 +2,14 @@
 var btn_add = document.getElementById("enter");
 var input = document.getElementById("userinput");
 var ul = document.querySelector("ul");
-var btn_clear = document.getElementById("clear")
+var btn_clear = document.getElementById("clear");
+
 
 //Events
 btn_add.addEventListener("click", addListAfterClick);
 input.addEventListener("keypress", addListAfterKeyPressed);
 btn_clear.addEventListener("click", clear);
+
 
 //add a new element to the list on click
 function addListAfterClick() {
@@ -30,9 +32,11 @@ function inputLength() {
 
 //Create a new li element with the text on input
 function createListElement() {
-    var li = document.createElement("li");
-    li.appendChild(document.createTextNode(input.value));
-    ul.appendChild(li);
+    var newLi = document.createElement("li");
+    newLi.appendChild(document.createTextNode(input.value));
+    newLi.addEventListener("click", doneOnOff);
+    
+    ul.appendChild(newLi);
     input.value = "";
 }
 
@@ -43,6 +47,11 @@ function clear() {
     ul.innerHTML = "";
     input.value = "";
 }
+
+function doneOnOff(event){
+    event.toElement.classList.toggle("done");
+}
+
 
 //not_working 
 /* function clear() {
@@ -62,3 +71,4 @@ function clear() {
         }
         input.value = "";
 } */
+
