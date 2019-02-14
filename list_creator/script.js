@@ -4,24 +4,24 @@ var input = document.getElementById("userinput");
 var ul = document.querySelector("ul");
 var btn_clear = document.getElementById("clear");
 
-
 //Events
 btn_add.addEventListener("click", addListAfterClick);
 input.addEventListener("keypress", addListAfterKeyPressed);
 btn_clear.addEventListener("click", clear);
 
-
 //add a new element to the list on click
-function addListAfterClick() {
+function addListAfterClick(event) {
     if (inputLength() > 0) {
-        createListElement()
+        createListElement();
+        createButton(event);
     }
 }
 
 //add a new element to the list on enter press
 function addListAfterKeyPressed(event) {
     if (inputLength() > 0 && event.keyCode === 13) {
-        createListElement()
+        createListElement();
+        createButton(event);
     }
 }
 
@@ -30,12 +30,18 @@ function inputLength() {
     return input.value.length;
 }
 
+function createButton(event) {
+    var btn = document.createElement("button");
+    btn.appendChild(document.createTextNode("Delete"));
+    btn.addEventListener("click", removeElemetn);
+    ul.appendChild(btn);
+}
+
 //Create a new li element with the text on input
 function createListElement() {
     var newLi = document.createElement("li");
     newLi.appendChild(document.createTextNode(input.value));
     newLi.addEventListener("click", doneOnOff);
-    
     ul.appendChild(newLi);
     input.value = "";
 }
@@ -50,6 +56,11 @@ function clear() {
 
 function doneOnOff(event){
     event.toElement.classList.toggle("done");
+}
+
+function removeElemetn(event){
+    ul.removeChild(event.toElement.previousElementSibling);
+    ul.removeChild(event.toElement);
 }
 
 
