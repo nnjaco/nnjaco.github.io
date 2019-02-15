@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    
+</head>
+<body id="gradient">
+    <h1>Gradient Background Picker</h1>
+    <h2>Select the colors fot the gradient</h2>
+    <input class="color1" type="color" name="color1" value="#ffffff">
+    <input class="color2" type="color" name="color2" value="#0000ff">
+    <h2>Select the gradient type</h2>
+    <input type="radio" name="gradient" value="linear-gradient" onchange="getSelectedGradiendType()" checked> linear-gradient<br>
+    <input type="radio" name="gradient" value="radial-gradient" onchange="getSelectedGradiendType()"> radial-gradient<br>
+    <h2>Select the gradient direction to:</h2>
+    <select id="direction" onchange="setGradient()">
+        <option value="to right">right</option>
+        <option value="to left">left</option>
+        <option value="to top">top</option>
+        <option value="to bottom">bottom</option>
+        <option value="to top left">top left</option>
+        <option value="to bottom left">bottom left</option>
+        <option value="to top right">top right</option>
+        <option value="to bottom right">bottom right</option>
+    </select>
+    <select id="direction-radial" onchange="setGradient()">
+        <!-- <option value="">none</option> -->
+        <option value="circle">circle</option>
+        <option value="circle closest-side">closest-side</option>
+        <option value="circle at top right">at top right</option>
+    </select>
+    <h2>Output:</h2>
+    <h3 id="current_bg">background: linear-gradient(to right, red, blue);</h3>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+    
+</html>
