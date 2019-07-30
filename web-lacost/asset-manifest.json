@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/web-lacost/static/css/main.3eb3fdde.chunk.css",
-    "main.js": "/web-lacost/static/js/main.74a7131c.chunk.js",
-    "main.js.map": "/web-lacost/static/js/main.74a7131c.chunk.js.map",
+    "main.js": "/web-lacost/static/js/main.11f552cd.chunk.js",
+    "main.js.map": "/web-lacost/static/js/main.11f552cd.chunk.js.map",
     "runtime~main.js": "/web-lacost/static/js/runtime~main.def2527c.js",
     "runtime~main.js.map": "/web-lacost/static/js/runtime~main.def2527c.js.map",
     "static/css/2.31dafeb2.chunk.css": "/web-lacost/static/css/2.31dafeb2.chunk.css",
     "static/js/2.5dafc3b8.chunk.js": "/web-lacost/static/js/2.5dafc3b8.chunk.js",
     "static/js/2.5dafc3b8.chunk.js.map": "/web-lacost/static/js/2.5dafc3b8.chunk.js.map",
     "index.html": "/web-lacost/index.html",
-    "precache-manifest.8e65673a3f69b70e6ba9a9fc4c5207ed.js": "/web-lacost/precache-manifest.8e65673a3f69b70e6ba9a9fc4c5207ed.js",
+    "precache-manifest.62f4095621414ef5c767a1c0cc5f8aaf.js": "/web-lacost/precache-manifest.62f4095621414ef5c767a1c0cc5f8aaf.js",
     "service-worker.js": "/web-lacost/service-worker.js",
     "static/css/2.31dafeb2.chunk.css.map": "/web-lacost/static/css/2.31dafeb2.chunk.css.map",
     "static/css/main.3eb3fdde.chunk.css.map": "/web-lacost/static/css/main.3eb3fdde.chunk.css.map",

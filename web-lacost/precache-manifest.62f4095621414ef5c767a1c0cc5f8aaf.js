@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "62f9ee4f711992e086e6cc76d919999a",
+    "revision": "da94cb106d8536780ebff73126d3f4dc",
     "url": "/web-lacost/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/web-lacost/static/css/2.31dafeb2.chunk.css"
   },
   {
-    "revision": "5d17f416934bf5a5484d",
+    "revision": "3a35e7fe9340ff87b489",
     "url": "/web-lacost/static/css/main.3eb3fdde.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/web-lacost/static/js/2.5dafc3b8.chunk.js"
   },
   {
-    "revision": "5d17f416934bf5a5484d",
-    "url": "/web-lacost/static/js/main.74a7131c.chunk.js"
+    "revision": "3a35e7fe9340ff87b489",
+    "url": "/web-lacost/static/js/main.11f552cd.chunk.js"
   },
   {
     "revision": "70887c2fd16bccd46d5c",
